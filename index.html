@@ -1,0 +1,669 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Ameer Abdur-Razzaaq, founder and CEO of Simplicity IT and builder of Simple Intelligence Group. Microsoft AI governance and security for regulated enterprises.">
+<meta property="og:title" content="Ameer Abdur-Razzaaq">
+<meta property="og:description" content="Ameer Abdur-Razzaaq, founder and CEO of Simplicity IT and builder of Simple Intelligence Group. Microsoft AI governance and security for regulated enterprises.">
+<meta property="og:image" content="img/capoeira.jpg">
+<title>Ameer Abdur-Razzaaq</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@112,600;112,800;100,500&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one long page that reads like a career file. A Commodore boot-screen hero that types LOAD and RUN, then sections on a reading column with a wide left margin for labels and years. */
+:root{
+  --paper:#f3f4f1; --raised:#ffffff; --ink:#15171c; --muted:#5a606b; --line:#d9dcd6;
+  --accent:#1f3fd1; --accent-soft:#e4e8fb; --signal:#c98400;
+  --screen:#3e31a2; --screen-ink:#a5a0ff;
+  --f-display:"Archivo", "Helvetica Neue", Arial, sans-serif;
+  --f-body:"Source Serif 4", Georgia, "Times New Roman", serif;
+  --f-mono:"IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+  --col:44rem;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#0f1115; --raised:#161920; --ink:#eceef0; --muted:#9aa1ac; --line:#262a31;
+  --accent:#8fa4ff; --accent-soft:#1a2142; --signal:#f2b940;
+  --screen:#2c2380; --screen-ink:#b7b2ff; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#0f1115; --raised:#161920; --ink:#eceef0; --muted:#9aa1ac; --line:#262a31;
+  --accent:#8fa4ff; --accent-soft:#1a2142; --signal:#f2b940;
+  --screen:#2c2380; --screen-ink:#b7b2ff; color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:17.5px;line-height:1.62;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--paper)}
+.wrap{max-width:68rem;margin:0 auto}
+a{color:var(--accent);text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--paper);border-bottom:1px solid var(--line)}
+.bar .wrap{display:flex;align-items:center;gap:10px 16px;padding-block:12px;flex-wrap:wrap}
+.mark{font-family:var(--f-display);font-weight:800;font-stretch:112%;font-size:.95rem;letter-spacing:.02em;color:var(--ink);text-decoration:none;margin-right:auto}
+.bar nav{display:flex;gap:4px 16px;flex-wrap:wrap}
+.bar nav a{font-family:var(--f-display);font-size:.84rem;font-weight:500;color:var(--muted);text-decoration:none;letter-spacing:.03em}
+.bar nav a:hover{color:var(--ink)}
+.theme{font:500 .78rem var(--f-mono);background:transparent;color:var(--muted);border:1px solid var(--line);border-radius:6px;padding:5px 9px;cursor:pointer}
+
+/* hero */
+.hero{padding-block:clamp(36px,7vw,80px) 40px;display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:32px 48px;align-items:start}
+.hero .main{display:flex;flex-direction:column;gap:24px;min-width:0}
+h1{font-family:var(--f-display);font-weight:800;font-stretch:112%;font-size:clamp(2.2rem,5.6vw,4.2rem);line-height:1.02;letter-spacing:-.015em;margin:0;text-wrap:balance}
+h1 em{font-style:normal;color:var(--accent)}
+.lede{font-size:clamp(1.06rem,1.8vw,1.24rem);max-width:var(--col);margin:0}
+.lede b{font-weight:600}
+.c64{background:var(--screen);color:var(--screen-ink);border-radius:10px;padding:18px 18px 22px;font-family:var(--f-mono);font-size:.9rem;line-height:1.55;border:10px solid color-mix(in srgb,var(--screen) 70%,var(--screen-ink));min-height:16.5rem;min-width:0;overflow:hidden}
+.c64 .hd{text-align:center;opacity:.9}
+.c64 pre{margin:10px 0 0;white-space:pre-wrap;font:inherit;word-break:break-word}
+.c64 .cur{display:inline-block;width:.62em;height:1.05em;background:var(--screen-ink);vertical-align:text-bottom;animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+@media (prefers-reduced-motion:reduce){.c64 .cur{animation:none}}
+.replay{margin-top:10px;font:500 .74rem var(--f-mono);background:transparent;border:1px solid var(--line);color:var(--muted);border-radius:6px;padding:4px 9px;cursor:pointer}
+@media (max-width:860px){.hero{grid-template-columns:1fr}.c64{min-height:0}}
+
+.facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid var(--ink);grid-column:1/-1}
+.fact{padding:14px 16px 4px 0;display:flex;flex-direction:column;gap:2px}
+.fact+.fact{padding-left:16px;border-left:1px solid var(--line)}
+.fact .n{font-family:var(--f-display);font-weight:800;font-stretch:112%;font-size:clamp(1.5rem,3vw,2.1rem);line-height:1.1;font-variant-numeric:tabular-nums}
+.fact .l{font-family:var(--f-mono);font-size:.74rem;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);line-height:1.4}
+@media (max-width:720px){.facts{grid-template-columns:repeat(2,minmax(0,1fr))}.fact:nth-child(3){padding-left:0;border-left:0}.fact:nth-child(n+3){border-top:1px solid var(--line)}}
+
+section.s{display:grid;grid-template-columns:minmax(0,13rem) minmax(0,1fr);gap:12px 40px;padding-block:56px;border-top:1px solid var(--line)}
+.s > .lab{font-family:var(--f-mono);font-size:.76rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);padding-top:10px}
+.s > .body{min-width:0;display:flex;flex-direction:column;gap:18px}
+h2{font-family:var(--f-display);font-weight:800;font-stretch:112%;font-size:clamp(1.6rem,3.4vw,2.35rem);line-height:1.1;margin:0;max-width:24ch;text-wrap:balance}
+h3{font-family:var(--f-display);font-weight:600;font-stretch:112%;font-size:1.08rem;line-height:1.3;margin:0}
+p{margin:0;max-width:var(--col)}
+@media (max-width:760px){section.s{grid-template-columns:1fr;padding-block:40px}.s > .lab{padding-top:0}}
+
+.roles{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--raised)}
+.role{padding:22px;display:flex;flex-direction:column;gap:12px;min-width:0}
+.role+.role{border-left:1px solid var(--line)}
+.k{font-family:var(--f-mono);font-size:.74rem;letter-spacing:.06em;text-transform:uppercase;color:var(--accent)}
+.role ul{margin:0;padding-left:1.1em;display:flex;flex-direction:column;gap:6px;font-size:.98rem}
+@media (max-width:680px){.roles{grid-template-columns:1fr}.role+.role{border-left:0;border-top:1px solid var(--line)}}
+
+/* products */
+.prods{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.prod{background:var(--raised);padding:18px;display:flex;flex-direction:column;gap:8px;min-width:0;transition:background .2s}
+.prod:hover{background:var(--accent-soft)}
+.prod .top{display:flex;justify-content:space-between;gap:8px;align-items:baseline;flex-wrap:wrap}
+.prod p{font-size:.94rem}
+.st{font-family:var(--f-mono);font-size:.68rem;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);white-space:nowrap}
+.st.live{color:var(--accent)}
+.prod.lead{grid-column:span 3;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:8px 28px;align-items:start}
+.prod.lead h3{font-size:1.35rem}
+@media (max-width:860px){.prods{grid-template-columns:repeat(2,minmax(0,1fr))}.prod.lead{grid-column:span 2;grid-template-columns:1fr}}
+@media (max-width:520px){.prods{grid-template-columns:1fr}.prod.lead{grid-column:span 1}}
+
+.work{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 32px}
+.job{display:flex;flex-direction:column;gap:8px;min-width:0;padding-top:14px;border-top:2px solid var(--ink)}
+.job .meta{font-family:var(--f-mono);font-size:.74rem;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);display:flex;flex-wrap:wrap;gap:4px 12px}
+.job p{font-size:.98rem}
+.job.now{border-top-color:var(--accent)}
+.job.now .meta span:first-child{color:var(--accent)}
+@media (max-width:680px){.work{grid-template-columns:1fr}}
+.note{font-size:.88rem;color:var(--muted);font-style:italic}
+
+.path{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
+.path li{display:grid;grid-template-columns:8.5rem minmax(0,1fr);gap:16px;padding-block:14px;border-bottom:1px solid var(--line)}
+.path li:last-child{border-bottom:0}
+.path .yr{font-family:var(--f-mono);font-size:.82rem;color:var(--muted);padding-top:3px;font-variant-numeric:tabular-nums}
+.path li.now .yr{color:var(--accent);font-weight:500}
+.path .what{display:flex;flex-direction:column;gap:3px;min-width:0}
+.path .what p{font-size:.96rem;color:var(--muted)}
+@media (max-width:520px){.path li{grid-template-columns:1fr;gap:2px}}
+
+.tags{display:flex;flex-wrap:wrap;gap:8px}
+.tag{font-family:var(--f-display);font-size:.84rem;font-weight:500;padding:5px 11px;border:1px solid var(--line);border-radius:999px;background:var(--raised)}
+.tag.on{border-color:var(--accent);background:var(--accent-soft)}
+.group{display:flex;flex-direction:column;gap:10px}
+.gk{font-family:var(--f-mono);font-size:.74rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+
+.talks{display:flex;flex-direction:column;border-top:1px solid var(--line)}
+.talk{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px 20px;padding-block:14px;border-bottom:1px solid var(--line);align-items:baseline}
+.talk .w{font-family:var(--f-mono);font-size:.76rem;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+@media (max-width:560px){.talk{grid-template-columns:1fr}}
+
+/* off the clock */
+.otc{display:flex;flex-direction:column;gap:16px;min-width:0}
+.vid{position:relative;width:100%;aspect-ratio:16/9;border-radius:10px;overflow:hidden;background:#0d0b1f;border:1px solid var(--line)}
+.vid iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.vid .poster{position:absolute;inset:0;width:100%;height:100%;padding:0;border:0;cursor:pointer;display:block;color:#fff;
+  background:radial-gradient(120% 90% at 30% 20%,#3a2f8f 0%,#14112e 60%,#0d0b1f 100%)}
+.vid .poster img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.82}
+.vid .poster::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 45%,rgba(0,0,0,.72) 100%)}
+.vid .play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:76px;height:76px;border-radius:50%;background:var(--signal);display:grid;place-items:center;z-index:1;box-shadow:0 8px 30px rgba(0,0,0,.4);transition:transform .2s}
+.vid .poster:hover .play{transform:translate(-50%,-50%) scale(1.07)}
+.vid .play svg{width:28px;height:28px;margin-left:5px;fill:#15171c}
+.vid .cap2{position:absolute;left:16px;right:16px;bottom:14px;z-index:1;text-align:left;font-family:var(--f-mono);font-size:.76rem;letter-spacing:.05em;text-transform:uppercase;line-height:1.4}
+.vid .cap2 b{display:block;font-family:var(--f-display);font-size:1.05rem;letter-spacing:0;text-transform:none;font-weight:700}
+.vidlink{font-family:var(--f-mono);font-size:.78rem;color:var(--muted)}
+
+/* the map: a narrated second-brain walkthrough */
+.map{border:1px solid var(--line);border-radius:12px;background:var(--raised);overflow:hidden;display:flex;flex-direction:column}
+.map svg{display:block;width:100%;height:auto;aspect-ratio:1000/620;max-width:100%;background:
+  radial-gradient(circle at 50% 50%, var(--accent-soft) 0, transparent 60%)}
+.map .edge{stroke:var(--line);stroke-width:1.6;transition:stroke .4s,stroke-width .4s}
+.map .edge.on{stroke:var(--accent);stroke-width:2.6}
+.map .pulse{fill:var(--accent)}
+.map .pulse.warm{fill:var(--signal)}
+.map .node{cursor:pointer}
+.map .node circle{fill:var(--raised);stroke:var(--muted);stroke-width:1.6;transition:stroke .3s,fill .3s,r .3s}
+.map .node.g-life circle{stroke:var(--signal)}
+.map .node.g-tech circle{stroke:var(--accent)}
+.map .node.hub circle{stroke-width:2.6}
+.map .node text{font-family:var(--f-display);font-size:15px;font-weight:600;fill:var(--ink);paint-order:stroke;stroke:var(--raised);stroke-width:5px;stroke-linejoin:round;pointer-events:none}
+.map .node.dim{opacity:.38}
+.map .node.on circle{fill:var(--accent);stroke:var(--accent)}
+.map .node.g-life.on circle{fill:var(--signal);stroke:var(--signal)}
+.map .node:focus-visible circle{stroke:var(--ink);stroke-width:3}
+.map .node.center circle{fill:var(--ink);stroke:var(--ink)}
+.map .node.center text{font-size:20px;font-weight:800}
+.cap{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px 20px;padding:16px 18px;border-top:1px solid var(--line);align-items:start}
+.cap .txt{display:flex;flex-direction:column;gap:4px;min-width:0}
+.cap .step{font-family:var(--f-mono);font-size:.74rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-variant-numeric:tabular-nums}
+.cap h3{font-size:1.15rem}
+.cap p{font-size:.98rem;min-height:3.2em}
+.ctl{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}
+.ctl button{font:500 .8rem var(--f-mono);border:1px solid var(--line);background:var(--paper);color:var(--ink);border-radius:7px;padding:7px 11px;cursor:pointer}
+.ctl button.primary{background:var(--accent);border-color:var(--accent);color:var(--paper)}
+.ctl button[aria-pressed="false"]{color:var(--muted)}
+.prog{height:3px;background:var(--line)}
+.prog i{display:block;height:100%;width:0;background:var(--accent);transition:width .4s}
+@media (max-width:640px){.cap{grid-template-columns:1fr}.ctl{justify-content:flex-start}.map .node text{font-size:19px}}
+
+.contact{display:flex;flex-direction:column;gap:14px}
+.line{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.line .v{font-family:var(--f-mono);font-size:1rem;word-break:break-all}
+.copy{font:500 .76rem var(--f-mono);border:1px solid var(--line);background:var(--raised);color:var(--muted);border-radius:6px;padding:4px 9px;cursor:pointer}
+.btn{display:inline-block;font-family:var(--f-display);font-weight:600;font-size:.95rem;padding:10px 16px;border-radius:8px;background:var(--accent);color:var(--paper);text-decoration:none}
+.btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--line)}
+footer{border-top:1px solid var(--line);padding-block:24px 48px;font-family:var(--f-mono);font-size:.76rem;color:var(--muted);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+</style>
+</head>
+<body>
+
+
+<div class="bar"><div class="wrap">
+  <a class="mark" href="#top">AMEER ABDUR-RAZZAAQ</a>
+  <nav aria-label="Sections">
+    <a href="#map">Map</a><a href="#story">Story</a><a href="#roles">Roles</a><a href="#products">Products</a><a href="#work">Work</a><a href="#path">Path</a><a href="#capoeira">Capoeira</a><a href="#contact">Contact</a>
+  </nav>
+  <button class="theme" id="theme" type="button" aria-label="Switch light or dark theme">Theme</button>
+</div></div>
+
+<main class="wrap" id="top">
+  <header class="hero">
+    <div class="main">
+      <h1>I learned on a Commodore in Harlem. Now I help enterprises <em>govern AI</em>.</h1>
+      <p class="lede">I'm Ameer Abdur-Razzaaq, founder and CEO of <b>Simplicity IT</b>, a New York managed AI and security firm and Microsoft partner, and the builder behind <b>Simple Intelligence Group</b>, its software company. Since 1999 I have installed, secured and modernized Microsoft environments for Wall Street investment banks and brokerages, financial information companies, global reinsurers, academic medical centers and manufacturers. Today I help regulated companies adopt Copilot and AI agents while keeping control of the identities and data underneath them.</p>
+    </div>
+    <div>
+      <div class="c64" aria-label="Commodore 64 start screen typing a load command">
+        <div class="hd">**** COMMODORE 64 BASIC V2 ****<br>64K RAM SYSTEM  38911 BASIC BYTES FREE</div>
+        <pre id="tty">READY.
+LOAD"AMEER",8,1
+
+SEARCHING FOR AMEER
+LOADING
+READY.
+RUN
+HARLEM ... E&amp;Y ... WALL STREET
+SIMPLICITY IT ... SIMPLE INTELLIGENCE
+READY.<span class="cur"></span></pre>
+      </div>
+      <button class="replay" id="replay" type="button">Run it again</button>
+    </div>
+    <div class="facts" role="list">
+      <div class="fact" role="listitem"><span class="n">1999</span><span class="l">First enterprise IT role, at Ernst &amp; Young</span></div>
+      <div class="fact" role="listitem"><span class="n">2011</span><span class="l">Founded Simplicity IT</span></div>
+      <div class="fact" role="listitem"><span class="n">3</span><span class="l">Microsoft security specializations</span></div>
+      <div class="fact" role="listitem"><span class="n">Forbes</span><span class="l">Featured, 2025</span></div>
+    </div>
+  </header>
+
+  <section class="s" id="map">
+    <div class="lab">The map</div>
+    <div class="body">
+      <h2>Everything connects. Press play for the two-minute tour.</h2>
+      <p>This is how my work and life link up, drawn the way I think about it. Press play and it walks you through the story one connection at a time, or click any node to jump in.</p>
+      <div class="map">
+        <svg id="brain" viewBox="0 0 1000 620" role="group" aria-label="A map of connected topics from Ameer's life and work"></svg>
+        <div class="prog"><i id="prog"></i></div>
+        <div class="cap">
+          <div class="txt" aria-live="polite">
+            <span class="step" id="cStep">The map · 12 stops</span>
+            <h3 id="cTitle">Ameer Abdur-Razzaaq</h3>
+            <p id="cText">Harlem roots, Wall Street and Microsoft programs, Simplicity IT, the products I build, and the capoeira circle. Press play to see how they connect.</p>
+          </div>
+          <div class="ctl">
+            <button type="button" id="mPrev" aria-label="Previous stop">Back</button>
+            <button type="button" class="primary" id="mPlay">Play tour</button>
+            <button type="button" id="mNext" aria-label="Next stop">Next</button>
+            <button type="button" id="mVoice" aria-pressed="true">Narration on</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="s" id="story">
+    <div class="lab">Story</div>
+    <div class="body">
+      <h2>Self-taught, hands-on, and still in the console.</h2>
+      <p>I was born and raised in Harlem, and I still live there with my wife and daughter. I learned by watching my older brothers on a Commodore VIC-20 and a Commodore 64, and when they weren't around, I worked my way through their COBOL and Fortran books, long before anyone paid me to do it. I got into IT because I like helping people, and that has not changed.</p>
+      <p>Computers were a passion before they were a paycheck. My first work was in medical billing, coding diagnoses and procedures in ICD-9 and CPT-4. Every claim depended on getting the record exactly right, and that habit of precision with sensitive data has stayed with me in every hospital and practice I have worked with since.</p>
+      <p>In 1999 I moved into enterprise IT at Ernst &amp; Young. As a team lead I supported the firm's external accounts, the audit teams working on site inside client companies, along with the offsite technicians who kept them running, and I deployed customized Windows images to more than 5,000 machines. From there I came back to the neighborhood to build the Harlem Partnership Center's network, then went to Wall Street for desktop, trading floor and imaging work at Credit Suisse and CIBC World Markets. For the next four years I worked independently, running managed services for small businesses and healthcare clients, where I already knew how the billing side of the office worked.</p>
+      <p>In 2011 I started Simplicity IT and began facilitating Microsoft's desktop deployment and proof-of-concept programs. Much of our work still comes through Microsoft. After Microsoft sells an enterprise agreement, it often calls me in to walk the buyer through implementation options and run the workshops, usually Microsoft-funded. That is where I am most useful: in the room with the people who have to make it work.</p>
+    </div>
+  </section>
+
+  <section class="s" id="roles">
+    <div class="lab">Roles</div>
+    <div class="body">
+      <h2>Practitioner, founder and product builder.</h2>
+      <div class="roles">
+        <div class="role">
+          <span class="k">Practitioner</span>
+          <h3>I still do the work myself</h3>
+          <ul>
+            <li>Governed Microsoft 365 E7 and Agent 365 pilots, starting from one or two real workflows</li>
+            <li>Copilot governance with Entra, Purview and Defender</li>
+            <li>Identity design, from hybrid Entra join to Active Directory minimization</li>
+            <li>Endpoint management from Configuration Manager to Intune, Autopilot and cloud imaging</li>
+            <li>Azure Virtual Desktop, and Azure and VMware migration starting with a funded assessment</li>
+          </ul>
+        </div>
+        <div class="role">
+          <span class="k">Founder</span>
+          <h3>I build the team and the motion around it</h3>
+          <ul>
+            <li>Founded Simplicity IT in 2011 with Microsoft as a core partner</li>
+            <li>Earned Microsoft specializations in Cloud Security, Identity and Access Management, and Threat Protection</li>
+            <li>Secured Microsoft funding for customer security workshops, proofs of concept and pilots</li>
+            <li>Approved partner on Microsoft's FY27 E3, E5 and E7 deployment voucher program</li>
+            <li>Work alongside AI and security engineers, most of them former Microsoft employees</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="s" id="products">
+    <div class="lab">Products I built</div>
+    <div class="body">
+      <h2>Software from Simple Intelligence Group.</h2>
+      <p>Most of my nights go into building products. Simple Intelligence Group owns the software, and Simplicity IT delivers and supports it for customers. Each product shares one shell and one built-in AI agent, Aria, and the customer chooses the model underneath it.</p>
+      <div class="prods">
+        <article class="prod lead">
+          <div><div class="top"><h3>SimpleOS</h3><span class="st">Platform</span></div></div>
+          <p>The shell that ties the suite together. Every product keeps its own data, approvals and audit trail, and Aria can work through Microsoft 365 Copilot or other assistants a customer already uses.</p>
+        </article>
+        <article class="prod"><div class="top"><h3>Simple Council</h3><span class="st">AI governance</span></div><p>Policy enforcement for AI agents, with human approvals and durable evidence for compliance teams.</p></article>
+        <article class="prod"><div class="top"><h3>Simple Atlas</h3><span class="st">AI platform</span></div><p>Multi-tenant AI routing with budgets, tenant controls, provenance and an operator console.</p></article>
+        <article class="prod"><div class="top"><h3>Simple Growth</h3><span class="st live">In use at Simplicity IT</span></div><p>An agentic CRM and quoting tool: pipeline, proposals, governed outreach and a Teams dialer.</p></article>
+        <article class="prod"><div class="top"><h3>Simple Merge</h3><span class="st">M&amp;A integration</span></div><p>Microsoft and VMware integration for mergers and acquisitions, shaped by real tenant-to-tenant migrations.</p></article>
+        <article class="prod"><div class="top"><h3>Simple Onboard</h3><span class="st">Identity lifecycle</span></div><p>Joiner, mover and leaver workflows for vendors and contractors.</p></article>
+        <article class="prod"><div class="top"><h3>Simple Present</h3><span class="st">Walkthroughs</span></div><p>Narrated story-map walkthroughs that explain a workflow, or sit on top of an existing PowerPoint.</p></article>
+        <article class="prod"><div class="top"><h3>Simple Projects</h3><span class="st">Delivery</span></div><p>AI-native project management for delivery teams.</p></article>
+        <article class="prod"><div class="top"><h3>Simple Time</h3><span class="st">Billing</span></div><p>Time tracking and billing tied to the work.</p></article>
+        <article class="prod"><div class="top"><h3>Private AI</h3><span class="st">Simplicity IT service</span></div><p>Local AI on customer-owned NVIDIA GB10 hardware for firms that cannot send client data to a public model.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="s" id="work">
+    <div class="lab">Signature work</div>
+    <div class="body">
+      <h2>Environments I built, secured or moved.</h2>
+      <div class="work">
+        <article class="job now">
+          <div class="meta"><span>Now</span><span>Commercial real estate</span></div>
+          <h3>Microsoft-funded VMware to Azure assessment</h3>
+          <p>Leading a Microsoft-funded assessment of a large commercial real estate firm's VMware estate, with a server discovery, a TCO and a wave plan for moving it to Azure.</p>
+        </article>
+        <article class="job now">
+          <div class="meta"><span>Now</span><span>Regulated enterprises</span></div>
+          <h3>Governed E7 and Agent 365 pilots</h3>
+          <p>Helping customers pick their first agents and govern them through Agent 365 before they touch real data, usually starting with approvals or document review.</p>
+        </article>
+        <article class="job">
+          <div class="meta"><span>Banking</span><span>Microsoft-badged</span></div>
+          <h3>Brought in by Microsoft at a top U.S. bank</h3>
+          <p>Microsoft brought me in as a Microsoft-badged Configuration Manager expert on an engagement at one of the largest banks in the country.</p>
+        </article>
+        <article class="job">
+          <div class="meta"><span>Capital markets</span><span>2016 to now</span></div>
+          <h3>A decade with one Wall Street brokerage group</h3>
+          <p>From a Configuration Manager upgrade with Microsoft-funded workshops to hybrid Entra join, Azure Virtual Desktop and ongoing endpoint work across its affiliates.</p>
+        </article>
+        <article class="job">
+          <div class="meta"><span>Sports and entertainment</span><span>2015 to 2020</span></div>
+          <h3>Built a New York venue company's endpoint platform</h3>
+          <p>Built its Configuration Manager environment, then returned with Microsoft funding for Windows 10 proofs of concept and pilots, Intune policies, Autopilot and a cloud management gateway.</p>
+        </article>
+        <article class="job">
+          <div class="meta"><span>Pharmaceutical</span><span>2019</span></div>
+          <h3>Stood up a spun-off company's IT from scratch</h3>
+          <p>Separated a pharmaceutical company from its global parent: a new Active Directory, Configuration Manager, BitLocker management and Azure, plus training for each of its teams.</p>
+        </article>
+        <article class="job">
+          <div class="meta"><span>Manufacturing</span><span>2011 and 2012</span></div>
+          <h3>On site for Microsoft's desktop deployment program</h3>
+          <p>Delivered Microsoft Desktop Deployment Planning Services through Insight and CDW. I flew out to the Upper Midwest for a week with one manufacturer's IT team, and ran an on-site pilot for another in New Hampshire that fed its global rollout.</p>
+        </article>
+        <article class="job">
+          <div class="meta"><span>Academic medicine</span><span>2014 to 2017</span></div>
+          <h3>Upgraded a medical college's management platform</h3>
+          <p>Moved a New York academic medical center from SCCM 2007 to 2012 R2, decommissioned the old servers, and stayed on through the move to current branch.</p>
+        </article>
+        <article class="job">
+          <div class="meta"><span>Reinsurance</span><span>2013</span></div>
+          <h3>Led a global reinsurer's Windows 7 deployment</h3>
+          <p>Led the Windows 7 deployment team for a Connecticut reinsurer, from image design and driver packaging to user state migration.</p>
+        </article>
+        <article class="job">
+          <div class="meta"><span>Industrial automation</span><span>2013 and 2014</span></div>
+          <h3>Application virtualization for a global manufacturer</h3>
+          <p>Designed MED-V and App-V for a Wisconsin industrial automation company, built the processes end to end, and trained its global operations team.</p>
+        </article>
+      </div>
+      <p class="note">Most of this work was delivered through Microsoft and its partners, so client names are left out.</p>
+    </div>
+  </section>
+
+  <section class="s" id="path">
+    <div class="lab">Path</div>
+    <div class="body">
+      <h2>From a home computer to the enterprise.</h2>
+      <ol class="path">
+        <li><span class="yr">Harlem</span><div class="what"><h3>Learned on my brothers' Commodores</h3><p>Watched my older brothers on a Commodore VIC-20 and a Commodore 64, then worked through their COBOL and Fortran books.</p></div></li>
+        <li><span class="yr">Before 1999</span><div class="what"><h3>Medical billing and coding</h3><p>ICD-9 diagnosis and CPT-4 procedure coding for medical billing.</p></div></li>
+        <li><span class="yr">1999 to 2004</span><div class="what"><h3>Ernst &amp; Young, team lead</h3><p>Supported external accounts and offsite technicians; deployed images to more than 5,000 machines.</p></div></li>
+        <li><span class="yr">2004 to 2006</span><div class="what"><h3>Harlem Partnership Center</h3><p>Built and supported its Windows network and domain.</p></div></li>
+        <li><span class="yr">2006 to 2007</span><div class="what"><h3>Credit Suisse and CIBC World Markets</h3><p>Desktop and trading floor support, imaging and Windows XP migration.</p></div></li>
+        <li><span class="yr">2007 to 2011</span><div class="what"><h3>Independent consultant</h3><p>Managed services for small businesses and healthcare clients.</p></div></li>
+        <li><span class="yr">2011</span><div class="what"><h3>Founded Simplicity IT</h3><p>Facilitated Microsoft's desktop deployment and proof-of-concept programs through Insight and other partners.</p></div></li>
+        <li><span class="yr">2012</span><div class="what"><h3>Avanade, technical lead</h3><p>Led Windows 7 migration and System Center work streams.</p></div></li>
+        <li><span class="yr">2013 to 2020</span><div class="what"><h3>Enterprise Windows and Configuration Manager programs</h3><p>Investment and commercial banking, reinsurance, manufacturing, media, academic medicine and government, including Microsoft Consulting Services teams.</p></div></li>
+        <li><span class="yr">2019 onward</span><div class="what"><h3>Cloud, identity and security</h3><p>Intune, Entra, Defender, Azure Virtual Desktop and migrations, and three Microsoft security specializations.</p></div></li>
+        <li><span class="yr">2025</span><div class="what"><h3>Featured in Forbes</h3><p>Profiled in Kori Hale's column through the CultureBanx and Microsoft "Elevating Innovation" series.</p></div></li>
+        <li class="now"><span class="yr">2026</span><div class="what"><h3>AI governance, and Simple Intelligence Group</h3><p>Governed Copilot, E7 and Agent 365 adoption for regulated enterprises, and a product suite to support it.</p></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="s" id="industries">
+    <div class="lab">Where I work</div>
+    <div class="body">
+      <h2>Industries where the stakes are high.</h2>
+      <div class="group"><span class="gk">Industries</span>
+        <div class="tags">
+          <span class="tag on">Investment banking and capital markets</span><span class="tag on">Commercial banking</span><span class="tag on">Insurance and reinsurance</span><span class="tag">Financial data and information</span><span class="tag">Healthcare and academic medicine</span><span class="tag">Manufacturing</span><span class="tag">Pharmaceutical</span><span class="tag">Legal</span><span class="tag">Media and entertainment</span><span class="tag">Commercial real estate</span><span class="tag">Government and education</span>
+        </div>
+      </div>
+      <div class="group"><span class="gk">Microsoft platform</span>
+        <div class="tags">
+          <span class="tag on">Agent 365</span><span class="tag on">Microsoft 365 E7</span><span class="tag on">Copilot</span><span class="tag">Entra ID</span><span class="tag">Purview</span><span class="tag">Defender</span><span class="tag">Sentinel</span><span class="tag">Intune</span><span class="tag">Autopilot</span><span class="tag">Configuration Manager</span><span class="tag">Azure Virtual Desktop</span><span class="tag">Azure</span><span class="tag">Copilot Studio</span><span class="tag">Power Automate</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="s" id="speaking">
+    <div class="lab">Speaking</div>
+    <div class="body">
+      <h2>On panels, in workshops, and teaching hands-on.</h2>
+      <p>Teaching security implementation hands-on is the part of the job I enjoy most. I have trained IT teams at nearly every company on this page, and I would rather show a room how to lock something down than describe it.</p>
+      <div class="talks">
+        <div class="talk"><h3>The Advisory Council AI Integration Panel</h3><span class="w">Panelist, Oct 2026</span></div>
+        <div class="talk"><h3>Governing Copilot and agents before they touch your data</h3><span class="w">Talk topic</span></div>
+        <div class="talk"><h3>Identity is where AI governance starts</h3><span class="w">Talk topic</span></div>
+        <div class="talk"><h3>Microsoft-funded customer workshops and envisioning sessions</h3><span class="w">Ongoing</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="s" id="capoeira">
+    <div class="lab">Off the clock</div>
+    <div class="body">
+      <h2>Years in the roda.</h2>
+      <div class="otc">
+        <div style="display:flex;flex-direction:column;gap:14px;min-width:0">
+          <p>Away from the keyboard, I trained in several martial arts, and the one I loved most was capoeira, the Afro-Brazilian art that blends fight, dance and music. I trained and taught it for years. Every class started with the ginga, the constant swaying step everything else grows out of, and ended in the roda, the circle where two players meet to the sound of the berimbau. The clip below is me in the roda with Raízes do Brasil in Harlem, back in 2010.</p>
+          <p>Teaching capoeira and teaching technology turned out to share a lot. People learn by doing, mistakes are part of the game, and the circle only works when everyone in it is paying attention.</p>
+        </div>
+        <div class="vid" id="capVid">
+          <button class="poster" type="button" id="capPlay" aria-label="Play the capoeira video, Raízes do Brasil Harlem, 2010">
+            <img src="img/capoeira.jpg" alt="" onerror="this.remove()">
+            <span class="play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4l15 8-15 8z"/></svg></span>
+            <span class="cap2"><b>Raízes do Brasil, Harlem</b>In the roda · 2010</span>
+          </button>
+        </div>
+        <span class="vidlink">Or <a href="https://youtu.be/VtR-PtG8y-U" target="_blank" rel="noopener">watch it on YouTube</a>.</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="s" id="contact">
+    <div class="lab">Contact</div>
+    <div class="body contact">
+      <h2>If you are working out how to say yes to AI safely, let's talk.</h2>
+      <div class="line"><span class="v" id="em">ameer@simplicityitinc.com</span><button class="copy" type="button" data-copy="em">Copy</button></div>
+      <div class="line"><span class="v" id="ph">(212) 419-1146 x700</span><button class="copy" type="button" data-copy="ph">Copy</button></div>
+      <div class="line">
+        <a class="btn" href="https://www.linkedin.com/in/ameerabdurrazzaaq" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn ghost" href="https://simplicityitinc.com" target="_blank" rel="noopener">simplicityitinc.com</a>
+        <a class="btn ghost" href="https://simpleintelligencegroup.com" target="_blank" rel="noopener">simpleintelligencegroup.com</a>
+      </div>
+    </div>
+  </section>
+
+  <footer><span>Ameer Abdur-Razzaaq · Harlem, New York</span><span>Simplicity IT · Simple Intelligence Group</span></footer>
+</main>
+
+<script>
+(function(){
+  var root=document.documentElement, btn=document.getElementById('theme');
+  try{var saved=localStorage.getItem('aar-theme'); if(saved) root.setAttribute('data-theme',saved);}catch(e){}
+  function current(){var t=root.getAttribute('data-theme'); if(t) return t; return matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}
+  function label(){btn.textContent = current()==='dark' ? 'Light' : 'Dark';}
+  label();
+  btn.addEventListener('click',function(){var n=current()==='dark'?'light':'dark'; root.setAttribute('data-theme',n); try{localStorage.setItem('aar-theme',n);}catch(e){} label();});
+
+  document.querySelectorAll('.copy').forEach(function(b){
+    b.addEventListener('click',function(){
+      var el=document.getElementById(b.dataset.copy), t=el.textContent;
+      function sel(){var r=document.createRange(); r.selectNodeContents(el); var s=getSelection(); s.removeAllRanges(); s.addRange(r); b.textContent='Selected';}
+      try{ navigator.clipboard.writeText(t).then(function(){b.textContent='Copied';},sel); }catch(e){ sel(); }
+      setTimeout(function(){b.textContent='Copy';},1600);
+    });
+  });
+
+  /* Commodore typing: the full text is visible at rest; this replays it as typed lines */
+  var tty=document.getElementById('tty');
+  var full=tty.innerHTML;
+  var lines=['READY.','LOAD"AMEER",8,1','','SEARCHING FOR AMEER','LOADING','READY.','RUN','HARLEM ... E&amp;Y ... WALL STREET','SIMPLICITY IT ... SIMPLE INTELLIGENCE','READY.'];
+  var typed=[1,6,7]; /* lines the user "types" */
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches, timer=null;
+  function play(){
+    if(reduce){tty.innerHTML=full;return;}
+    clearTimeout(timer);
+    var out='', li=0, ci=0;
+    function step(){
+      if(li>=lines.length){tty.innerHTML=out+'<span class="cur"></span>';return;}
+      var L=lines[li];
+      if(typed.indexOf(li)>=0 && ci<L.length){ci++; tty.innerHTML=out+L.slice(0,ci)+'<span class="cur"></span>'; timer=setTimeout(step,70); return;}
+      out+=L+'\n'; li++; ci=0; tty.innerHTML=out+'<span class="cur"></span>';
+      timer=setTimeout(step, typed.indexOf(li-1)>=0?380:(li===5?900:260));
+    }
+    step();
+  }
+  document.getElementById('replay').addEventListener('click',play);
+  setTimeout(play,600);
+})();
+
+/* ---------- The map: narrated second-brain tour ---------- */
+(function(){
+  var svg=document.getElementById('brain'); if(!svg) return;
+  var NS='http://www.w3.org/2000/svg';
+  // g: life (personal), tech (work), hub (cluster heads)
+  var N=[
+    {id:'ameer',l:'Ameer',x:500,y:310,c:'center',t:'Ameer Abdur-Razzaaq',d:'Founder of Simplicity IT and builder behind Simple Intelligence Group. Everything on this map connects back here.'},
+    {id:'harlem',l:'Harlem',x:240,y:150,g:'life',hub:1,t:'Harlem',d:'Born and raised in Harlem, and still home today with my wife and daughter.'},
+    {id:'c64',l:'Commodore 64',x:105,y:78,g:'life',t:'Commodore 64',d:'I learned by watching my older brothers on a Commodore VIC-20 and a Commodore 64, and read their COBOL and Fortran books when they were not around.'},
+    {id:'help',l:'Helping people',x:110,y:230,g:'life',t:'Helping people',d:'The reason I got into IT, and still the reason I stay in it.'},
+    {id:'ey',l:'Ernst & Young',x:205,y:430,g:'tech',hub:1,t:'Ernst & Young, 1999 to 2004',d:'Team lead supporting audit teams on site inside client companies. More than 5,000 machines imaged.'},
+    {id:'wall',l:'Wall Street',x:95,y:520,g:'tech',t:'Credit Suisse and CIBC',d:'Desktop, trading floor and imaging work on Wall Street.'},
+    {id:'hpc',l:'Harlem Partnership Center',x:300,y:565,g:'life',t:'Harlem Partnership Center',d:'Built and supported its Windows network and domain, back home in the neighborhood.'},
+    {id:'ddps',l:'Microsoft programs',x:430,y:80,g:'tech',hub:1,t:'Microsoft programs, 2011',d:'Facilitated Microsoft desktop deployment and proof-of-concept programs through Insight and CDW, on site from New Hampshire to the Upper Midwest.'},
+    {id:'badge',l:'Microsoft-badged',x:585,y:50,g:'tech',t:'Microsoft-badged expert',d:'Microsoft brought me in as a Microsoft-badged Configuration Manager expert at one of the largest U.S. banks.'},
+    {id:'fund',l:'Funded workshops',x:690,y:120,g:'tech',t:'Microsoft-funded work',d:'Secured Microsoft funding for customer workshops, proofs of concept and pilots, and today funded assessments and E7 pilots.'},
+    {id:'sit',l:'Simplicity IT',x:775,y:235,g:'tech',hub:1,t:'Simplicity IT, 2011',d:'A New York managed AI and security firm and Microsoft partner, built around the people who have to make technology work.'},
+    {id:'spec',l:'Security specializations',x:900,y:150,g:'tech',t:'Three Microsoft specializations',d:'Cloud Security, Identity and Access Management, and Threat Protection.'},
+    {id:'ent',l:'Enterprise programs',x:910,y:300,g:'tech',t:'Enterprise programs',d:'Investment banks, brokerages, commercial banks, reinsurers, academic medicine, manufacturers, media and government, from Windows 7 to Intune, Azure and AI.'},
+    {id:'sig',l:'Simple Intelligence',x:760,y:430,g:'tech',hub:1,lb:1,t:'Simple Intelligence Group',d:'The software company. I build most of the products myself, on one shell with one built-in AI agent, Aria.'},
+    {id:'os',l:'SimpleOS + Aria',x:905,y:420,g:'tech',t:'SimpleOS and Aria',d:'One shell across the suite. Each product keeps its own data and audit trail, and customers choose the model under Aria.'},
+    {id:'council',l:'Simple Council',x:900,y:530,g:'tech',t:'Simple Council',d:'Policy enforcement for AI agents, with human approvals and evidence compliance teams can use.'},
+    {id:'growth',l:'Simple Growth',x:770,y:575,g:'tech',t:'Simple Growth',d:'Agentic CRM and quoting, already in use at Simplicity IT.'},
+    {id:'ai',l:'AI governance',x:560,y:470,g:'tech',hub:1,t:'AI governance and security',d:'Where it all points now: helping regulated companies adopt Copilot and AI agents without losing control of identity and data.'},
+    {id:'e7',l:'Agent 365 + E7',x:600,y:585,g:'tech',t:'Agent 365 and E7 pilots',d:'Governed pilots that start with one or two real workflows, like approvals or document review.'},
+    {id:'teach',l:'Teaching',x:375,y:430,g:'life',hub:1,t:'Teaching hands-on',d:'I have trained IT teams at nearly every company I worked with. I would rather show a room how to lock something down than describe it.'},
+    {id:'cap',l:'Capoeira',x:320,y:300,g:'life',t:'Capoeira',d:'I trained in several martial arts, and capoeira was the one I loved most. I trained and taught it for years. It starts with the ginga and ends in the roda, and it teaches the same thing tech does: learn by doing.'},
+    {id:'forbes',l:'Forbes 2025',x:640,y:205,g:'tech',t:'Featured in Forbes',d:'Profiled in 2025 through the CultureBanx and Microsoft "Elevating Innovation" series.'}
+  ];
+  var E=[['ameer','harlem'],['harlem','c64'],['harlem','help'],['harlem','hpc'],['ameer','ey'],['ey','wall'],['ey','hpc'],['ameer','ddps'],['ddps','badge'],['ddps','fund'],['ddps','sit'],['ameer','sit'],['sit','spec'],['sit','ent'],['sit','fund'],['sit','sig'],['ameer','sig'],['sig','os'],['sig','council'],['sig','growth'],['ameer','ai'],['ai','e7'],['ai','council'],['ai','spec'],['ameer','teach'],['teach','cap'],['teach','help'],['cap','harlem'],['ameer','forbes'],['forbes','sit'],['teach','ent']];
+  var tour=[
+    ['harlem','It starts in Harlem. I was born and raised there, and I still live there today.'],
+    ['c64','I learned by watching my older brothers on a Commodore VIC-20 and a Commodore 64. When they weren\'t around, I went through their COBOL and Fortran books.'],
+    ['ey','In 1999 I joined Ernst and Young, leading support for audit teams working inside client companies, and imaging more than five thousand machines.'],
+    ['wall','Then Wall Street: desktop, trading floor and imaging work at Credit Suisse and CIBC World Markets.'],
+    ['ddps','In 2011 I started facilitating Microsoft deployment programs, flying out to customer sites from New Hampshire to the Upper Midwest.'],
+    ['sit','That same year I founded Simplicity IT, a Microsoft partner built around the people who actually have to make technology work.'],
+    ['fund','Microsoft began calling me in after it sold enterprise agreements, and I secured funding for workshops, proofs of concept and pilots.'],
+    ['spec','We earned Microsoft specializations in Cloud Security, Identity and Access Management, and Threat Protection.'],
+    ['ai','Today it all points to one place: helping regulated companies adopt Copilot and AI agents while keeping control of their identities and data.'],
+    ['sig','At night I build products. Simple Intelligence Group is the software company, with one shell and one AI agent, Aria, across the suite.'],
+    ['cap','And off the clock, I trained in several martial arts. The one I loved most was capoeira, and I trained and taught it for years. Learning by doing is the thread that runs through all of it.'],
+    ['ameer','That\'s the map. If you\'re working out how to say yes to AI safely, let\'s talk.']
+  ];
+  var byId={}; N.forEach(function(n){byId[n.id]=n;});
+  var gE=document.createElementNS(NS,'g'), gP=document.createElementNS(NS,'g'), gN=document.createElementNS(NS,'g');
+  svg.appendChild(gE); svg.appendChild(gP); svg.appendChild(gN);
+  var edgeEls=E.map(function(e){
+    var a=byId[e[0]], b=byId[e[1]], ln=document.createElementNS(NS,'line');
+    ln.setAttribute('x1',a.x);ln.setAttribute('y1',a.y);ln.setAttribute('x2',b.x);ln.setAttribute('y2',b.y);
+    ln.setAttribute('class','edge'); gE.appendChild(ln); return {a:a,b:b,el:ln};
+  });
+  var nodeEls={};
+  N.forEach(function(n){
+    var g=document.createElementNS(NS,'g'); g.setAttribute('class','node '+(n.c||'')+(n.g?' g-'+n.g:'')+(n.hub?' hub':''));
+    g.setAttribute('tabindex','0'); g.setAttribute('role','button'); g.setAttribute('aria-label',n.t);
+    var r=n.c?26:(n.hub?14:9);
+    var c=document.createElementNS(NS,'circle'); c.setAttribute('cx',n.x); c.setAttribute('cy',n.y); c.setAttribute('r',r); g.appendChild(c);
+    var tx=document.createElementNS(NS,'text'); tx.textContent=n.l;
+    var below=n.c||n.y<110||n.lb; tx.setAttribute('x',n.x); tx.setAttribute('y',n.c? n.y+52 : (below? n.y+r+18 : n.y-r-8)); tx.setAttribute('text-anchor','middle');
+    if(n.x<160){tx.setAttribute('text-anchor','start'); tx.setAttribute('x',n.x-10);} if(n.x>860){tx.setAttribute('text-anchor','end'); tx.setAttribute('x',n.x+10);}
+    g.appendChild(tx); gN.appendChild(g); nodeEls[n.id]=g;
+    g.addEventListener('click',function(){stop(); focus(n.id,null,true);});
+    g.addEventListener('keydown',function(ev){if(ev.key==='Enter'||ev.key===' '){ev.preventDefault(); stop(); focus(n.id,null,true);}});
+  });
+
+  var cStep=document.getElementById('cStep'), cTitle=document.getElementById('cTitle'), cText=document.getElementById('cText'), prog=document.getElementById('prog');
+  var playBtn=document.getElementById('mPlay'), voiceBtn=document.getElementById('mVoice');
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var voiceOn=('speechSynthesis' in window);
+  var clips=tour.map(function(_,i){return 'audio/'+(i<9?'0':'')+(i+1)+'.mp3';});
+  var player=new Audio(); player.preload='auto'; var safety=null;
+  var idx=-1, playing=false, timer=null, vb=[0,0,1000,620], vbTarget=vb.slice();
+
+  function setVB(t){vbTarget=t; if(reduce){vb=t.slice(); svg.setAttribute('viewBox',vb.join(' '));}}
+  function animVB(){ if(!reduce){ for(var i=0;i<4;i++) vb[i]+= (vbTarget[i]-vb[i])*0.08; svg.setAttribute('viewBox',vb.map(function(v){return v.toFixed(1);}).join(' ')); } }
+
+  function focus(id, line, fromClick){
+    var n=byId[id]; var linked={}; linked[id]=1;
+    edgeEls.forEach(function(e){ var on=(e.a.id===id||e.b.id===id); e.el.classList.toggle('on',on); if(on){linked[e.a.id]=1;linked[e.b.id]=1;} });
+    N.forEach(function(m){ var el=nodeEls[m.id]; el.classList.toggle('on',m.id===id && !m.c); el.classList.toggle('dim',!linked[m.id]); });
+    cTitle.textContent=n.t; cText.textContent=line||n.d;
+    if(id==='ameer'){ setVB([0,0,1000,620]); }
+    else { var w=640,h=397; var x=Math.max(0,Math.min(1000-w,n.x-w/2)), y=Math.max(0,Math.min(620-h,n.y-h/2)); setVB([x,y,w,h]); }
+    if(fromClick){ cStep.textContent='Exploring'; prog.style.width='0'; }
+  }
+  function reset(){ edgeEls.forEach(function(e){e.el.classList.remove('on');}); N.forEach(function(m){nodeEls[m.id].classList.remove('on','dim');}); setVB([0,0,1000,620]); }
+
+  function say(text, done){
+    if(voiceBtn.getAttribute('aria-pressed')!=='true'){ timer=setTimeout(done, Math.max(4200, text.length*55)); return; }
+    var over=false; function fin(){ if(over) return; over=true; clearTimeout(safety); timer=setTimeout(done,650); }
+    function fallback(){ clearTimeout(safety); synth(text, fin); }
+    try{
+      player.pause(); player.src=clips[idx]; player.onended=fin; player.onerror=fallback;
+      var pr=player.play(); if(pr && pr.catch) pr.catch(fallback);
+      safety=setTimeout(fin, 20000);
+    }catch(e){ fallback(); }
+  }
+  function synth(text, done){
+    if(!voiceOn){ timer=setTimeout(done, Math.max(4200, text.length*55)); return; }
+    try{
+      speechSynthesis.cancel(); var u=new SpeechSynthesisUtterance(text); u.rate=1.0; u.pitch=1.0;
+      var finished=false; function fin(){ if(finished) return; finished=true; timer=setTimeout(done,700); }
+      u.onend=fin; u.onerror=fin; speechSynthesis.speak(u);
+      timer=setTimeout(fin, Math.max(6000, text.length*90)); /* safety if onend never fires */
+    }catch(e){ timer=setTimeout(done, Math.max(4200, text.length*55)); }
+  }
+  function show(i){
+    idx=(i+tour.length)%tour.length; var s=tour[idx];
+    cStep.textContent=(idx+1<10?'0':'')+(idx+1)+' / '+tour.length;
+    prog.style.width=((idx+1)/tour.length*100)+'%';
+    focus(s[0], s[1]);
+  }
+  function advance(){ if(!playing) return; if(idx>=tour.length-1){ stop(); return; } show(idx+1); say(tour[idx][1], advance); }
+  function start(){ playing=true; playBtn.textContent='Pause'; if(idx<0||idx>=tour.length-1) idx=-1; advance(); }
+  function stop(){ playing=false; playBtn.textContent=idx>=0&&idx<tour.length-1?'Resume':'Play tour'; clearTimeout(timer); clearTimeout(safety); try{ player.pause(); }catch(e){} try{ if(voiceOn) speechSynthesis.cancel(); }catch(e){} }
+  playBtn.addEventListener('click',function(){ playing?stop():start(); });
+  document.getElementById('mNext').addEventListener('click',function(){ stop(); show(idx+1); });
+  document.getElementById('mPrev').addEventListener('click',function(){ stop(); show(idx<=0?tour.length-1:idx-1); });
+  voiceBtn.addEventListener('click',function(){ var on=voiceBtn.getAttribute('aria-pressed')!=='true'; voiceBtn.setAttribute('aria-pressed',on); voiceBtn.textContent=on?'Narration on':'Narration off'; if(!on){ try{player.pause();}catch(e){} try{speechSynthesis.cancel();}catch(e){} } });
+
+  /* neural pulses travelling along connections */
+  var pulses=[];
+  function spawn(){
+    var pool=edgeEls.filter(function(e){return e.el.classList.contains('on');}); if(!pool.length||Math.random()<0.45) pool=edgeEls;
+    var e=pool[Math.floor(Math.random()*pool.length)], fwd=Math.random()<0.5;
+    var c=document.createElementNS(NS,'circle'); c.setAttribute('r',3.6);
+    c.setAttribute('class','pulse'+((e.a.g==='life'||e.b.g==='life')?' warm':'')); gP.appendChild(c);
+    pulses.push({e:e,f:fwd,t:0,el:c,sp:0.006+Math.random()*0.008});
+  }
+  var last=0;
+  function tick(ts){
+    animVB();
+    if(!reduce){
+      if(ts-last>260 && pulses.length<14){ spawn(); last=ts; }
+      pulses=pulses.filter(function(p){ p.t+=p.sp; if(p.t>=1){ p.el.remove(); return false; }
+        var a=p.f?p.e.a:p.e.b, b=p.f?p.e.b:p.e.a; p.el.setAttribute('cx',a.x+(b.x-a.x)*p.t); p.el.setAttribute('cy',a.y+(b.y-a.y)*p.t); return true; });
+    }
+    requestAnimationFrame(tick);
+  }
+  requestAnimationFrame(tick);
+})();
+</script>
+
+
+<script>
+(function(){
+  var b=document.getElementById('capPlay'), box=document.getElementById('capVid');
+  if(!b||!box) return;
+  b.addEventListener('click',function(){
+    var f=document.createElement('iframe');
+    f.src='https://www.youtube-nocookie.com/embed/VtR-PtG8y-U?autoplay=1&rel=0';
+    f.title='Raízes do Brasil Harlem, capoeira roda, 2010';
+    f.allow='autoplay; encrypted-media; picture-in-picture; fullscreen';
+    f.allowFullscreen=true; f.referrerPolicy='strict-origin-when-cross-origin';
+    box.innerHTML=''; box.appendChild(f);
+  });
+})();
+</script>
+</body>
+</html>
