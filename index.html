@@ -66,6 +66,8 @@ h1 em{font-style:normal;color:var(--accent)}
 .facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid var(--ink);grid-column:1/-1}
 .fact{padding:14px 16px 4px 0;display:flex;flex-direction:column;gap:2px}
 .fact+.fact{padding-left:16px;border-left:1px solid var(--line)}
+a.fact{color:inherit;text-decoration:none}
+a.fact:hover .l{color:var(--accent)}
 .fact .n{font-family:var(--f-display);font-weight:800;font-stretch:112%;font-size:clamp(1.5rem,3vw,2.1rem);line-height:1.1;font-variant-numeric:tabular-nums}
 .fact .l{font-family:var(--f-mono);font-size:.74rem;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);line-height:1.4}
 @media (max-width:720px){.facts{grid-template-columns:repeat(2,minmax(0,1fr))}.fact:nth-child(3){padding-left:0;border-left:0}.fact:nth-child(n+3){border-top:1px solid var(--line)}}
@@ -221,7 +223,7 @@ READY.<span class="cur"></span></pre>
       <div class="fact" role="listitem"><span class="n">1999</span><span class="l">First enterprise IT role, at Ernst &amp; Young</span></div>
       <div class="fact" role="listitem"><span class="n">2011</span><span class="l">Founded Simplicity IT</span></div>
       <div class="fact" role="listitem"><span class="n">3</span><span class="l">Microsoft security specializations</span></div>
-      <div class="fact" role="listitem"><span class="n">Forbes</span><span class="l">Featured, 2025</span></div>
+      <a class="fact" role="listitem" href="https://www.forbes.com/sites/korihale/2025/05/23/why-tech-leaders-are-betting-big-on-automation-first-models/" target="_blank" rel="noopener"><span class="n">Forbes</span><span class="l">Featured, 2025 · Read it</span></a>
     </div>
   </header>
 
@@ -390,7 +392,7 @@ READY.<span class="cur"></span></pre>
         <li><span class="yr">2012</span><div class="what"><h3>Avanade, technical lead</h3><p>Led Windows 7 migration and System Center work streams.</p></div></li>
         <li><span class="yr">2013 to 2020</span><div class="what"><h3>Enterprise Windows and Configuration Manager programs</h3><p>Investment and commercial banking, reinsurance, manufacturing, media, academic medicine and government, including Microsoft Consulting Services teams.</p></div></li>
         <li><span class="yr">2019 onward</span><div class="what"><h3>Cloud, identity and security</h3><p>Intune, Entra, Defender, Azure Virtual Desktop and migrations, and three Microsoft security specializations.</p></div></li>
-        <li><span class="yr">2025</span><div class="what"><h3>Featured in Forbes</h3><p>Profiled in Kori Hale's column through the CultureBanx and Microsoft "Elevating Innovation" series.</p></div></li>
+        <li><span class="yr">2025</span><div class="what"><h3>Featured in Forbes</h3><p><a href="https://www.forbes.com/sites/korihale/2025/05/23/why-tech-leaders-are-betting-big-on-automation-first-models/" target="_blank" rel="noopener">&ldquo;Why Tech Leaders Are Betting Big On Automation-First Models&rdquo;</a>, Kori Hale, May 2025, through the CultureBanx and Microsoft "Elevating Innovation" series.</p></div></li>
         <li class="now"><span class="yr">2026</span><div class="what"><h3>AI governance, and Simple Intelligence Group</h3><p>Governed Copilot, E7 and Agent 365 adoption for regulated enterprises, and a product suite to support it.</p></div></li>
       </ol>
     </div>
@@ -533,7 +535,7 @@ READY.<span class="cur"></span></pre>
     {id:'e7',l:'Agent 365 + E7',x:600,y:585,g:'tech',t:'Agent 365 and E7 pilots',d:'Governed pilots that start with one or two real workflows, like approvals or document review.'},
     {id:'teach',l:'Teaching',x:375,y:430,g:'life',hub:1,t:'Teaching hands-on',d:'I have trained IT teams at nearly every company I worked with. I would rather show a room how to lock something down than describe it.'},
     {id:'cap',l:'Capoeira',x:320,y:300,g:'life',t:'Capoeira',d:'I trained in several martial arts, and capoeira was the one I loved most. I trained and taught it for years. It starts with the ginga and ends in the roda, and it teaches the same thing tech does: learn by doing.'},
-    {id:'forbes',l:'Forbes 2025',x:640,y:205,g:'tech',t:'Featured in Forbes',d:'Profiled in 2025 through the CultureBanx and Microsoft "Elevating Innovation" series.'}
+    {id:'forbes',l:'Forbes 2025',x:640,y:205,g:'tech',t:'Featured in Forbes',d:'Quoted in Forbes in May 2025: “Why Tech Leaders Are Betting Big On Automation-First Models,” through the CultureBanx and Microsoft "Elevating Innovation" series.'}
   ];
   var E=[['ameer','harlem'],['harlem','c64'],['harlem','help'],['harlem','hpc'],['ameer','ey'],['ey','wall'],['ey','hpc'],['ameer','ddps'],['ddps','badge'],['ddps','fund'],['ddps','sit'],['ameer','sit'],['sit','spec'],['sit','ent'],['sit','fund'],['sit','sig'],['ameer','sig'],['sig','os'],['sig','council'],['sig','growth'],['ameer','ai'],['ai','e7'],['ai','council'],['ai','spec'],['ameer','teach'],['teach','cap'],['teach','help'],['cap','harlem'],['ameer','forbes'],['forbes','sit'],['teach','ent']];
   var tour=[
